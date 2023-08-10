@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- Font Awesone -->
-  <script src="https://kit.fontawesome.com/c3ef53a0a4.js" crossorigin="anonymous"></script>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-  <title>Cronometro | Bruno H</title>
-</head>
-<body>
-  <div>
-    <h1 id="watch">00:00:00</h1>    
-    <button class="btn-start" onclick="start()">Iniciar</button>
-    <button class="btn-pause" onclick="pause()">Pausar</button>
-    <button class="btn-stop" onclick="stop()">Parar</button>
-  </div>
-  <script src="./js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesone -->
+    <script
+      src="https://kit.fontawesome.com/c3ef53a0a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GOOGLE ANALYTICS -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TJQ2XJZPTD"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-TJQ2XJZPTD");
+    </script>
+    <title>Timer | Bruno Dórea</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="watch">00:00:00</h1>
+      <button class="btn-start" onclick="start()">Iniciar</button>
+      <button class="btn-pause" onclick="pause()">Pausar</button>
+      <button class="btn-stop" onclick="stop()">Parar</button>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
